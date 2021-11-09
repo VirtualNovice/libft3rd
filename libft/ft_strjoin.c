@@ -20,13 +20,11 @@ char *ft_strjoin(char const *s1, char const *s2)
 
 	a = 0;
 	b = 0;
-	//b = ft_strlen(s1);
 	if (s1 == NULL || s2 == NULL)
 		return NULL;
 	str = (char *)malloc(((ft_strlen(s1) + ft_strlen(s2)) + 1)* sizeof(char));
 	if(str == NULL)
 		return NULL;
-	//ft_memcpy(str,s1,b);
 	while(s1[b] != '\0')
 	{
 		str[b] =  s1[b];

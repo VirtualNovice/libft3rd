@@ -13,7 +13,7 @@
 #include "libft.h"
 
 
-static char *cpystr(char const str, unsigned int start, int len)
+/*static char *cpystr(char const str, unsigned int start, int len)
 {
     int b;
     int a;
@@ -26,7 +26,7 @@ static char *cpystr(char const str, unsigned int start, int len)
         sub[b++] = str[a++]; 
     sub[b] = '\0';
     return (sub);
-}
+}*/
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -49,11 +49,11 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     {
         if(a == start)
         {
-            /*while(b != len)     
+            while(b != len)     
                 sub[b++] = s[a++];
         sub[b] = '\0';
-        return (sub);*/
-        cpystr(*s,start,len);
+        return (sub);
+        //cpystr(*s,start,len);
         }
         a++;
     }

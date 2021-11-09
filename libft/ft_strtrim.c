@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char	*strbeg(char const *s1, char const *set)
+static char	*strbeg(char const *s1, char const *set)
 {
 	size_t	a;
 	size_t	b;
@@ -40,7 +40,7 @@ char	*strbeg(char const *s1, char const *set)
 	return (0);
 }
 
-size_t	strend(char const *s1, char const *set)
+static size_t	strend(char const *s1, char const *set)
 {
 	size_t	b;
 	char	*str;
